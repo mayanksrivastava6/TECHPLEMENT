@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration System</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <% if (typeof success_msg !== 'undefined') { %>
+            <div class="alert alert-success"><%= success_msg %></div>
+        <% } %>
+        <% if (typeof error_msg !== 'undefined') { %>
+            <div class="alert alert-danger"><%= error_msg %></div>
+        <% } %>
+        <h1><%= page %></h1>
+        <p><%= content %></p>
+        <a href="/auth/register">Register</a> | <a href="/auth/login">Login</a> | <a href="/auth/logout">Logout</a>
+    </div>
+</body>
+</html>
+
